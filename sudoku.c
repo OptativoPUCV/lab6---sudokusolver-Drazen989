@@ -67,7 +67,7 @@ int is_valid(Node* n){
 
    */
 
-   int i, j;
+      int i, j;
       int row[9][10] = {0}; // Arreglo para marcar números en filas
       int col[9][10] = {0}; // Arreglo para marcar números en columnas
       int subgrid[3][3][10] = {0}; // Arreglo para marcar números en submatrices de 3x3
@@ -88,9 +88,9 @@ int is_valid(Node* n){
          }
       }
       return 1; // Si no se encontraron problemas, el estado es válido
-   }
    
-    //return 1;
+   
+   return 1;
 }
 
 
