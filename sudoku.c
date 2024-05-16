@@ -90,7 +90,7 @@ int is_valid(Node* n){
       return 1; // Si no se encontraron problemas, el estado es válido
    }
    
-    return 1;
+    //return 1;
 }
 
 
