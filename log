@@ -146,3 +146,14 @@ sudoku.c:58:13: error: unused variable ‘lista’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 a2b5b08
+Thu 16 May 2024 10:12:41 PM UTC: 
+ sudoku.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:58:13: error: unused variable ‘lista’ [-Werror=unused-variable]
+   58 |       List *lista = createList();
+      |             ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f03e920
