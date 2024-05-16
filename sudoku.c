@@ -108,6 +108,9 @@ Node* DFS(Node* initial, int* cont){
    while(!is_empty(s)){
       Node* n = top(s);
       pop(s);
+      if (is_final(n) == 1){
+         return n;
+      }
    }
   return NULL;
 }
