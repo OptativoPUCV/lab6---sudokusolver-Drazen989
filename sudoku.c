@@ -111,6 +111,8 @@ Node* DFS(Node* initial, int* cont){
       if (is_final(n) == 1){
          return n;
       }
+      List* list = get_adj_nodes(n);
+      
    }
   return NULL;
 }
