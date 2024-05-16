@@ -54,22 +54,23 @@ int is_valid(Node* n){
 
 
 List* get_adj_nodes(Node* n){
-   int i,k;
+   int i,j,k;
    List* list=createList();
    for (i=0 ; i<9 ; i++){
-      for (k=0 ; k<9 ; k++){
+      for (j=0 ; j<9 ; j++){
+         
          if (n->sudo[i][k] == 0){
-            Node* aux = copy(n);
-            aux->sudo[i][k] = 1;
-            pushBack(list,aux);
+            for (k=0 ; k<9 ; k++){
+               n->sudo[i][k] = k;
+               Node* aux = copy(n);
+               
+               if (is_valid(n) == 0){
+                  pushBack(list,aux);
+               }
+            }
          }
       }
-      if (is_valid(n) == 0){
-         return NULL;
-      }
    }
-   
-   
    return list;
 }
 
