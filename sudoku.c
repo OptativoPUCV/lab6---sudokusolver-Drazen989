@@ -117,6 +117,9 @@ Node* DFS(Node* initial, int* cont){
          push(s,aux);
          aux = next(list);
       }
+      popFront(list);
+      free(list);
+      (*cont)++;
       
    }
   return NULL;
