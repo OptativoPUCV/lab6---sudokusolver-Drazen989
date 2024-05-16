@@ -97,3 +97,15 @@ Thu 16 May 2024 09:52:59 PM UTC:
  tests:  0|5
 total_score: 0/70
 43a0e1a
+Thu 16 May 2024 09:53:07 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:68:14: error: ‘NUL’ undeclared (first use in this function); did you mean ‘NULL’?
+   68 |       return NUL;
+      |              ^~~
+      |              NULL
+sudoku.c:68:14: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c096255
