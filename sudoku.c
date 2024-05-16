@@ -3,9 +3,11 @@
 #include "list.h"
 
 
+
 typedef struct{
    int sudo[9][9];
 }Node;
+
 
 Node* createNode(){
   Node* n=(Node*) malloc(sizeof(Node));
@@ -43,15 +45,29 @@ void print_node(Node* n){
     printf("\n");
 }
 
-int is_valid(Node* n){
+//Filtrar por columna y fila y el cuadrado (podemos guardar los datos de cada cuadrado);
 
+int is_valid(Node* n){
+   
     return 1;
 }
 
 
 List* get_adj_nodes(Node* n){
-    List* list=createList();
-    return list;
+   int i,k;
+   List* list=createList();
+   for (i=0 ; i<9 ; i++){
+      for (k=0 ; k<9 ; k++){
+         if (n->sudo[i][k] == 0){
+            Node* aux = copy(n);
+            aux->sudo[i][k] = 1;
+            pushBack(list,aux);
+         }
+      }
+   }
+   
+   
+   return list;
 }
 
 
