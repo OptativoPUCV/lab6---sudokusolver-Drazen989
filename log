@@ -109,3 +109,9 @@ sudoku.c:68:14: error: ‘NUL’ undeclared (first use in this function); did yo
 sudoku.c:68:14: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 c096255
+Thu 16 May 2024 09:53:12 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+d60bb23

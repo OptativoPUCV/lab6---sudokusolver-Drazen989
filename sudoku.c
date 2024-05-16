@@ -65,7 +65,7 @@ List* get_adj_nodes(Node* n){
          }
       }
       if (is_valid(n) == 0){
-      return NUL;
+         return NULL;
       }
    }
    
