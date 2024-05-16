@@ -120,9 +120,8 @@ Node* DFS(Node* initial, int* cont){
       popFront(list);
       free(list);
       (*cont)++;
-      
    }
-  return NULL;
+  //return NULL;
 }
 
 
