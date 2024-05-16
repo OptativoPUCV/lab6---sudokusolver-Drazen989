@@ -50,7 +50,7 @@ void print_node(Node* n){
 int is_valid(Node* n){
    //int *vector_columna = (int*) calloc(sizeof(int)*9);
    //int *vector_fila = (int*) calloc(sizeof(int)*9);
-
+/*
    int k=8,p; 
    for(p=0;p<9;p++){
       int i=3*(k/3) + (p/3) ;
@@ -65,7 +65,7 @@ int is_valid(Node* n){
    
    
 
-   
+   */
    
     return 1;
 }
