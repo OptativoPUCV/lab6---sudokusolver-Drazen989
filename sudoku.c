@@ -71,12 +71,7 @@ int is_valid(Node* n){
    int fila[9][10] = {0};
    int columna[9][10] = {0}; 
    int matriz3x3[3][3][10] = {0};
-   int k=8,p;
-   for(p=0;p<9;p++){
-      int i=3*(k/3) + (p/3) ;
-      int j=3*(k%3) + (p%3) ;
-      
-   }
+   
 
    for (i = 0; i < 9; i++) {
       for (j = 0; j < 9; j++) {
