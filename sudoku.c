@@ -68,13 +68,13 @@ int is_valid(Node* n){
    */
 
    int i, j;
-   int row[9][10] = {0}; // Arreglo para marcar números en filas
-   int col[9][10] = {0}; // Arreglo para marcar números en columnas
-   int subgrid[3][3][10] = {0}; // Arreglo para marcar números en submatrices de 3x3
+   int row[9][10] = {0};
+   int col[9][10] = {0}; 
+   int subgrid[3][3][10] = {0};
 
    for (i = 0; i < 9; i++) {
       for (j = 0; j < 9; j++) {
-         if (n->sudo[i][j] == 0) continue; // Si la celda está vacía, saltar a la siguiente
+         if (n->sudo[i][j] == 0) continue; 
          int num = n->sudo[i][j];
          // Verificar fila
          if (row[i][num]) return 0;
@@ -87,7 +87,7 @@ int is_valid(Node* n){
          subgrid[i / 3][j / 3][num] = 1;
       }
    }
-   return 1; // Si no se encontraron problemas, el estado es válido
+   return 1; 
 }
 
 
