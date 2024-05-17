@@ -68,9 +68,9 @@ int is_valid(Node* n){
    */
 
    int i, j;
-   int fila[9][10] = {0};
-   int columna[9][10] = {0}; 
-   int matriz3x3[3][3][10] = {0};
+   int fila[9][9] = {0};
+   int columna[9][9] = {0}; 
+   int matriz3x3[3][3][9] = {0};
    
 
    for (i = 0; i < 9; i++) {
