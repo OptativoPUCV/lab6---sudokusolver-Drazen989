@@ -103,13 +103,15 @@ List* get_adj_nodes(Node* n){
          
          if (n->sudo[i][j] == 0){
             for (k=0 ; k<9 ; k++){
-               n->sudo[i][k] = k+1;
+               n->sudo[i][j] = k+1;
                Node* aux = copy(n);
                
-               if (is_valid(n) == 0){
+               if (is_valid(aux) == 0){
                   pushBack(list,aux);
                }
+                  
                else free(aux);
+               
             }
             n->sudo[i][j] = 0;
             return list;
