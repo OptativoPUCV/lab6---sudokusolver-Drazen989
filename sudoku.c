@@ -148,7 +148,7 @@ Node* DFS(Node* initial, int* cont){
       }
       //popFront(list);
       free(n);
-      freeList(list);
+      free(*list);
       (*cont)++;
    }
   return NULL;

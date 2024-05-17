@@ -410,3 +410,13 @@ sudoku.c:151:7: error: implicit declaration of function ‘freeList’; did you 
 cc1: all warnings being treated as errors
 Compilation failed
 d78e56a
+Fri 17 May 2024 12:28:44 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:151:12: error: invalid use of incomplete typedef ‘List’
+  151 |       free(*list);
+      |            ^~~~~
+Compilation failed
+7fa381c
