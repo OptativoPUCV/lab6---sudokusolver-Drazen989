@@ -261,3 +261,27 @@ Fri 17 May 2024 12:05:43 AM UTC:
  1 file changed, 7 insertions(+), 7 deletions(-)
  tests:  0|0
 8cffaf5
+Fri 17 May 2024 12:06:12 AM UTC: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:79:10: error: expected expression before ‘int’
+   79 |          int num = n->sudo[i][j];
+      |          ^~~
+sudoku.c:81:22: error: ‘num’ undeclared (first use in this function)
+   81 |          if (fila[i][num]) return 0;
+      |                      ^~~
+sudoku.c:81:22: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:73:8: error: variable ‘subgrid’ set but not used [-Werror=unused-but-set-variable]
+   73 |    int subgrid[3][3][10] = {0};
+      |        ^~~~~~~
+sudoku.c:72:8: error: variable ‘columna’ set but not used [-Werror=unused-but-set-variable]
+   72 |    int columna[9][10] = {0};
+      |        ^~~~~~~
+sudoku.c:71:8: error: variable ‘fila’ set but not used [-Werror=unused-but-set-variable]
+   71 |    int fila[9][10] = {0};
+      |        ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+94796ad
