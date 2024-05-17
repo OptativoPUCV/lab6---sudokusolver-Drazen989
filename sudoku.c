@@ -70,7 +70,13 @@ int is_valid(Node* n){
    int i, j;
    int fila[9][10] = {0};
    int columna[9][10] = {0}; 
-   int subgrid[3][3][10] = {0};
+   int matriz3x3[3][3][10] = {0};
+   int k=8,p;
+   for(p=0;p<9;p++){
+      int i=3*(k/3) + (p/3) ;
+      int j=3*(k%3) + (p%3) ;
+      
+   }
 
    for (i = 0; i < 9; i++) {
       for (j = 0; j < 9; j++) {
@@ -82,12 +88,12 @@ int is_valid(Node* n){
          
          if (fila[i][num]) return 0;
          fila[i][num] = 1;
-         // Verificar columna
+      
          if (columna[j][num]) return 0;
          columna[j][num] = 1;
-         // Verificar submatriz de 3x3
-         if (subgrid[i / 3][j / 3][num]) return 0;
-         subgrid[i / 3][j / 3][num] = 1;
+
+         if (matriz3x3[i / 3][j / 3][num]) return 0;
+         matriz3x3[i / 3][j / 3][num] = 1;
       }
    }
    return 1; 

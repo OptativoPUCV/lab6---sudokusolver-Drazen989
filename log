@@ -338,3 +338,17 @@ Fri 17 May 2024 12:07:05 AM UTC:
  1 file changed, 2 insertions(+), 1 deletion(-)
  tests:  0|0
 8689657
+Fri 17 May 2024 12:09:34 AM UTC: 
+ sudoku.c | 16 +++++++++++-----
+ 1 file changed, 11 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:77:11: error: unused variable ‘j’ [-Werror=unused-variable]
+   77 |       int j=3*(k%3) + (p%3) ;
+      |           ^
+sudoku.c:76:11: error: unused variable ‘i’ [-Werror=unused-variable]
+   76 |       int i=3*(k/3) + (p/3) ;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+c645116
