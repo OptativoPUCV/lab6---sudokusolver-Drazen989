@@ -333,3 +333,8 @@ sudoku.c:71:8: error: variable ‘fila’ set but not used [-Werror=unused-but-s
 cc1: all warnings being treated as errors
 Compilation failed
 0214690
+Fri 17 May 2024 12:07:05 AM UTC: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  0|0
+8689657
