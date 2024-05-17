@@ -109,6 +109,7 @@ List* get_adj_nodes(Node* n){
                if (is_valid(n) == 0){
                   pushBack(list,aux);
                }
+               else free(aux);
             }
             n->sudo[i][j] = 0;
             return list;
@@ -152,7 +153,7 @@ Node* DFS(Node* initial, int* cont){
 
 
 
-
+/*
 int main( int argc, char *argv[] ){
 
   Node* initial= read_file("s12a.txt");;
@@ -164,3 +165,4 @@ int main( int argc, char *argv[] ){
 
   return 0;
 }
+*/
