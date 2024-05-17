@@ -398,3 +398,15 @@ Fri 17 May 2024 12:28:04 AM UTC:
  tests:  4|3
 total_score: 30/70
 f61cbe9
+Fri 17 May 2024 12:28:33 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:151:7: error: implicit declaration of function ‘freeList’; did you mean ‘createList’? [-Werror=implicit-function-declaration]
+  151 |       freeList(list);
+      |       ^~~~~~~~
+      |       createList
+cc1: all warnings being treated as errors
+Compilation failed
+d78e56a
