@@ -46,9 +46,7 @@ void print_node(Node* n){
 }
 
 //Filtrar por columna y fila y el cuadrado (podemos guardar los datos de cada cuadrado);
-
-int is_valid(Node* n){
-   //int *vector_columna = (int*) calloc(sizeof(int)*9);
+  //int *vector_columna = (int*) calloc(sizeof(int)*9);
    //int *vector_fila = (int*) calloc(sizeof(int)*9);
 /*
    int k=8,p; 
@@ -56,16 +54,16 @@ int is_valid(Node* n){
       int i=3*(k/3) + (p/3) ;
       int j=3*(k%3) + (p%3) ;
       List *lista = createList();
-      
+
       if (n->sudo[i][j] == 0) return 0;
-      
+
     //printf("%d ",n->sudo[i][j]);
     //if(p%3 == 2) printf("\n");
    }
-   
-   
+*/
 
-   */
+int is_valid(Node* n){
+ 
 
    int i, j;
    int fila[9][10] = {0};
